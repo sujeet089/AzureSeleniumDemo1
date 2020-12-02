@@ -58,7 +58,7 @@ public class ExecutionMain {
 //Calling the HomePage Method(POM page)
 	
 	@Test
-	 private void Test1() {
+	 public void Test1() {
 		//creating a object for the POM
 			HomePage home =new HomePage();
 			
@@ -76,7 +76,7 @@ public class ExecutionMain {
 	
 	@Parameters({"SearchBar"})
 	@Test
-		private void Test2(String s1) throws AWTException {
+		public void Test2(String s1) throws AWTException {
 		
 	//creating a object for Search
 		Search search=new Search();
@@ -94,7 +94,7 @@ public class ExecutionMain {
 	
 //verfying the product and adding to the cart along with place order.
 	@Test
-	private void Test3() throws InterruptedException {
+	public void Test3() throws InterruptedException {
 		
 //Creating a object for the Cart POM page
 		Cart cart=new Cart();
